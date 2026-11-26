@@ -1,0 +1,429 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #F4EBDD;
+    color: #292D29;
+    font-family: Georgia, 'Times New Roman', serif;
+    line-height: 1.7;
+}
+
+/* header */
+
+header {
+    background-color: #244B3C;
+    color: #F4EBDD;
+    padding: 55px 8%;
+    text-align: left;
+    border-bottom: 8px solid #E58A45;
+}
+
+header h1 {
+    font-family: Arial, sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+}
+
+header p {
+    font-size: 18px;
+    color: #E8B98E;
+    letter-spacing: 3px;
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+
+/* 3. NAVIGATION */
+
+nav {
+    background-color: #292D29;
+    padding: 18px 8%;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 35px;
+    list-style: none;
+}
+
+nav a {
+    color: #F4EBDD;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #E58A45;
+}
+
+/* horizontal */
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #C9BBA7;
+}
+
+/* main grid */
+
+main {
+    max-width: 1250px;
+    margin: 55px auto;
+    padding: 0 35px;
+
+    display: grid;
+    grid-template-columns: 1.8fr 1fr;
+    gap: 35px;
+}
+
+/* section */
+
+section {
+    background-color: #FFFCF5;
+    padding: 35px;
+    margin-bottom: 30px;
+    border: 1px solid #DED3C2;
+    border-radius: 3px;
+}
+
+section h2 {
+    color: #244B3C;
+    font-family: Arial, sans-serif;
+    font-size: 27px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+}
+
+section > p {
+    font-size: 16px;
+    color: #666056;
+}
+
+/* home */
+
+#home {
+    background-color: #E9DCC8;
+    border: none;
+    padding: 45px;
+}
+
+#home h2 {
+    font-size: 34px;
+    max-width: 450px;
+}
+
+#home p {
+    max-width: 450px;
+    margin-bottom: 20px;
+}
+
+/* 8. IMAGE AND FIGURE */
+
+figure {
+    margin-top: 30px;
+}
+
+figure img {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border: 7px solid #FFFCF5;
+}
+
+figure div,
+figure figcaption {
+    margin-top: 12px;
+    color: #766A5A;
+    font-size: 13px;
+    font-style: italic;
+}
+
+/* course */
+
+#courses {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#courses h2 {
+    margin-bottom: 10px;
+}
+
+#courses article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    background-color: #F4EBDD;
+    padding: 22px;
+    border-left: 5px solid #E58A45;
+    transition: 0.3s ease;
+}
+
+#courses article:hover {
+    background-color: #244B3C;
+    color: #F4EBDD;
+    transform: translateX(8px);
+}
+
+#courses article:hover h3,
+#courses article:hover p {
+    color: #F4EBDD;
+}
+
+/* article */
+
+article h3 {
+    color: #244B3C;
+    font-family: Arial, sans-serif;
+    font-size: 19px;
+}
+
+article p {
+    color: #766A5A;
+    font-size: 14px;
+}
+
+/* tutorial */
+
+#tutorials article {
+    margin-top: 18px;
+    padding: 20px 0;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #DED3C2;
+    border-radius: 0;
+}
+
+#tutorials article:hover {
+    transform: none;
+    background: transparent;
+    box-shadow: none;
+}
+
+#tutorials article p:first-of-type {
+    color: #C16D34;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 5px 0;
+}
+
+/* sidebar */
+
+aside {
+    background-color: #244B3C;
+    color: #F4EBDD;
+    padding: 30px;
+    height: fit-content;
+    border-bottom: 7px solid #E58A45;
+}
+
+aside h2 {
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #F4EBDD;
+}
+
+aside h3 {
+    color: #E8B98E;
+    font-family: Arial, sans-serif;
+    margin: 25px 0 10px;
+    font-size: 16px;
+}
+
+aside ul {
+    padding-left: 20px;
+}
+
+aside li {
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: #E4D9C9;
+}
+
+aside a {
+    color: #E8B98E;
+    text-decoration: none;
+}
+
+aside a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* goal n contact */
+
+#goal,
+#contact {
+    max-width: 1180px;
+    margin: 30px auto;
+    padding: 35px;
+    background-color: #FFFCF5;
+    border-top: 5px solid #E58A45;
+    text-align: center;
+}
+
+#goal h2,
+#contact h2 {
+    color: #244B3C;
+}
+
+/* link */
+
+section a {
+    color: #B75E2B;
+}
+
+section a:hover {
+    color: #244B3C;
+}
+
+/*sidebar */
+.sidebar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+/* footer */
+
+footer {
+    background-color: #292D29;
+    color: #E4D9C9;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 7px solid #E58A45;
+}
+
+footer p {
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+footer a {
+    color: #E8B98E;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+}
+
+/* tablet respo */
+
+@media screen and (max-width: 900px) {
+
+    main {
+        grid-template-columns: 1fr;
+        margin: 30px auto;
+        padding: 0 25px;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    header {
+        padding: 40px 6%;
+    }
+
+    header h1 {
+        font-size: 38px;
+    }
+
+    #resources,
+    #contact {
+        margin: 25px;
+    }
+}
+
+/* mobile respo */
+
+@media screen and (max-width: 600px) {
+
+    header {
+        padding: 35px 20px;
+    }
+
+    header h1 {
+        font-size: 29px;
+        letter-spacing: -1px;
+    }
+
+    header p {
+        font-size: 13px;
+    }
+
+    nav {
+        padding: 18px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 13px;
+    }
+
+    main {
+        padding: 0 15px;
+        margin: 25px auto;
+        gap: 10px;
+    }
+
+    section {
+        padding: 22px;
+        margin-bottom: 18px;
+    }
+
+    #home {
+        padding: 25px;
+    }
+
+    #home h2 {
+        font-size: 26px;
+    }
+
+    section h2 {
+        font-size: 22px;
+    }
+
+    #courses article {
+        padding: 17px;
+    }
+
+    aside {
+        padding: 23px;
+    }
+
+    #resources,
+    #contact {
+        margin: 18px 15px;
+        padding: 23px;
+    }
+
+    footer {
+        padding: 30px 15px;
+    }
+}
